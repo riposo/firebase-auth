@@ -1,8 +1,7 @@
-package main
+package firebaseauth
 
 import (
 	"github.com/riposo/firebase-auth/internal"
-	"github.com/riposo/riposo/pkg/api"
 	"github.com/riposo/riposo/pkg/auth"
 	"github.com/riposo/riposo/pkg/plugin"
 	"github.com/riposo/riposo/pkg/riposo"
@@ -16,18 +15,14 @@ func init() {
 		}
 		return internal.New(cfg)
 	})
-}
 
-// Plugin export definition.
-func Plugin(_ *api.Routes) (plugin.Plugin, error) {
-	return plugin.New(
-		"firebase_auth",
+	plugin.Register(plugin.New(
+		"firebase-auth",
 		map[string]interface{}{
 			"description": "Authenticate users via Firebase JWT.",
 			"url":         "https://github.com/riposo/firebase-auth",
 		},
 		nil,
-	), nil
+		nil,
+	))
 }
-
-func main() {}
