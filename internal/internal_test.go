@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/bsm/firejwt"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
+	. "github.com/bsm/ginkgo"
+	. "github.com/bsm/gomega"
 	"github.com/riposo/firebase-auth/internal"
 	"github.com/riposo/riposo/pkg/api"
 	"github.com/riposo/riposo/pkg/auth"
