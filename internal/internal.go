@@ -13,9 +13,9 @@ import (
 type Config struct {
 	Auth struct {
 		Firebase struct {
-			ProjectID       string   `envconfig:"PROJECT_ID"`
-			OnlyDomains     []string `envconfig:"ONLY_DOMAINS"`
-			AllowUnverified bool     `envconfig:"ALLOW_UNVERIFIED"`
+			ProjectID       string   `yaml:"project_id"`
+			OnlyDomains     []string `yaml:"only_domains"`
+			AllowUnverified bool     `yaml:"allow_unverified"`
 		}
 	}
 }
