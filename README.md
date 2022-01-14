@@ -2,18 +2,19 @@
 
 Firebase authentication token verification plugin for [Riposo](https://github.com/riposo/riposo).
 
-## Configuration options
+## Configuration
 
-- `RIPOSO_AUTH_FIREBASE_TOKEN_URL` - the token verification URL (default: `https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com`)
-- `RIPOSO_AUTH_FIREBASE_VERIFY_ISS` - verify `iss` claim, ensure it matches given value
-- `RIPOSO_AUTH_FIREBASE_VERIFY_AUD` - verify `aud` claim, ensure it matches given value
-- `RIPOSO_AUTH_FIREBASE_ONLY_DOMAINS` - restricts users to given (comma-separated) list of domains
-- `RIPOSO_AUTH_FIREBASE_ALLOW_EXPIRED` - allow expired tokens (not recommended)
-- `RIPOSO_AUTH_FIREBASE_ALLOW_UNVERIFIED` - allow user with non-verified emails (not recommended)
+The following additional configuration options can be used:
+
+| Option                           | Type       | Description                                | Default |
+| -------------------------------- | ---------- | ------------------------------------------ | ------- |
+| `auth.firebase.project_id`       | `string`   | The Firebase Project ID                    | _none_  |
+| `auth.firebase.only_domains`     | `string[]` | Restrict to the following domains          | _none_  |
+| `auth.firebase.allow_unverified` | `bool`     | Allow user with unverified email addresses | `false` |
 
 ## License
 
-Copyright 2021 Black Square Media Ltd
+Copyright 2021-2022 Black Square Media Ltd
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this material except in compliance with the License.

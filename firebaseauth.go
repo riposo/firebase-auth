@@ -8,9 +8,9 @@ import (
 )
 
 func init() {
-	auth.Register("firebase", func(_ *riposo.Helpers) (auth.Method, error) {
+	auth.Register("firebase", func(hlp riposo.Helpers) (auth.Method, error) {
 		cfg := new(internal.Config)
-		if err := riposo.ParseEnv(cfg); err != nil {
+		if err := hlp.ParseConfig(cfg); err != nil {
 			return nil, err
 		}
 		return internal.New(cfg)
