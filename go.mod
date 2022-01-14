@@ -6,7 +6,7 @@ require (
 	github.com/bsm/firejwt v0.4.0
 	github.com/bsm/ginkgo v1.16.5
 	github.com/bsm/gomega v1.17.0
-	github.com/riposo/riposo v0.1.1-0.20220114131858-bf5c852e0220
+	github.com/riposo/riposo v0.1.1-0.20220114132044-fcc1b2b5f517
 )
 
 require (
