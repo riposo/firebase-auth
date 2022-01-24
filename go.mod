@@ -4,14 +4,15 @@ go 1.17
 
 require (
 	github.com/bsm/firejwt v0.4.0
-	github.com/bsm/ginkgo v1.16.5
+	github.com/bsm/ginkgo/v2 v2.0.0
 	github.com/bsm/gomega v1.17.0
-	github.com/riposo/riposo v0.1.1-0.20220114132044-fcc1b2b5f517
+	github.com/riposo/riposo v0.1.1-0.20220124111015-eb8388408d10
 )
 
 require (
 	github.com/alexedwards/argon2id v0.0.0-20211130144151-3585854a6387 // indirect
 	github.com/bmatcuk/doublestar/v4 v4.0.2 // indirect
+	github.com/bsm/ginkgo v1.16.5 // indirect
 	github.com/bsm/nanoid v0.2.0 // indirect
 	github.com/go-chi/chi/v5 v5.0.7 // indirect
 	github.com/golang-jwt/jwt/v4 v4.1.0 // indirect
