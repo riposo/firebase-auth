@@ -3,19 +3,18 @@ module github.com/riposo/firebase-auth
 go 1.17
 
 require (
-	github.com/bsm/firejwt v0.4.0
+	github.com/bsm/firejwt v0.4.1
 	github.com/bsm/ginkgo/v2 v2.0.0
 	github.com/bsm/gomega v1.17.0
-	github.com/riposo/riposo v0.1.1-0.20220124111015-eb8388408d10
+	github.com/riposo/riposo v0.1.1-0.20220218125627-c6c027d27583
 )
 
 require (
 	github.com/alexedwards/argon2id v0.0.0-20211130144151-3585854a6387 // indirect
 	github.com/bmatcuk/doublestar/v4 v4.0.2 // indirect
-	github.com/bsm/ginkgo v1.16.5 // indirect
 	github.com/bsm/nanoid v0.2.0 // indirect
 	github.com/go-chi/chi/v5 v5.0.7 // indirect
-	github.com/golang-jwt/jwt/v4 v4.1.0 // indirect
+	github.com/golang-jwt/jwt/v4 v4.3.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/tidwall/gjson v1.13.0 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
